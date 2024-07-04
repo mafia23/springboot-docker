@@ -31,11 +31,11 @@ docker run -p 8080:8080 springboot-docker
 ### 不带名称标签
 docker save -o   e:\docker\images\app.tar <image_id>
 ### 带名称标签
-docker save  <container_id> -o e:\docker\images\springboot-docker_0.0.1-SNAPSHOT.tar springboot-docker:0.0.1-SNAPSHOT
+docker save  <image_id> -o e:\docker\images\springboot-docker_0.0.1-SNAPSHOT.tar springboot-docker:0.0.1-SNAPSHOT
 
 ## 6.载入镜像
 docker load -i springboot-docker_0.0.1-SNAPSHOT.tar 
 
 ## 7.启动容器
-docker run -d -p 8081:8080 <image_id>
+docker run -d -p 8081:8080 --name springboot-docker <image_id>
 # springboot-docker
