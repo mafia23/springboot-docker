@@ -68,4 +68,6 @@ docker load -i springboot-docker_0.0.1-SNAPSHOT.tar
 
 ## 6.启动容器
 docker run -d -p 8081:8080 --name springboot-docker <image_id>
+例子：
+docker run -d -p 18080:18080  -e "SPRING_PROFILES_ACTIVE=prod"  --restart always -v /opt/hshy/logs/aqld:/opt/hshy/logs/aqld  --name aqld-console-server b578e9953eb5
 
