@@ -62,6 +62,8 @@ docker build -t springboot-docker:0.0.1-SNAPSHOT .
 docker save -o   e:\docker\images\app.tar <image_id>
 ### 带名称标签
 docker save  <image_id> -o e:\docker\images\springboot-docker_0.0.1-SNAPSHOT.tar springboot-docker:0.0.1-SNAPSHOT
+或者
+docker save  -o e:\docker\images\aqld-console-server-1.3.0-SNAPSHOT.tar aqld-console-server:1.3.0-SNAPSHOT
 
 ## 5..载入镜像
 docker load -i springboot-docker_0.0.1-SNAPSHOT.tar 
